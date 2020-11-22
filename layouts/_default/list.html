@@ -3,10 +3,21 @@
 {{ end }}
 {{ define "main" }}
 {{ "<!-- _default/list.html start -->" | safeHTML }}
-<ul>
+
+<section>
+<ol>
 {{ range .Pages -}}
-<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+<li>
+    <time>
+        {{ .Date.Format "2006年01月02日" }}
+    </time>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+</li>
 {{ end -}}
-</ul>
+</ol>
 {{ "<!-- _default/list.html end -->" | safeHTML }}
+
+</section>
+
 {{ end }}
+
