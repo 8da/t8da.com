@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ block "title" . }}{{ end }}</title>
+  </head>
+  <body>
+      <header>
+          <nav>
+              <p>
+                <a href="{{ relURL "/" }}">8da.github.io</a>
+              </p>
+          </nav>
+      </header>
+      <main>
+    {{ "<!-- _default/baseof.html start -->" | safeHTML }}
+    <hr />
+    {{ block "main" . }}{{ end }}
+    {{ "<!-- _default/baseof.html end -->" | safeHTML }}
+    </main>
+  </body>
+
+</html>
