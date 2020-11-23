@@ -2,21 +2,20 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>{{ block "title" . }}{{ end }}</title>
+    <link rel="stylesheet" href="{{ relURL "css/style.css" }}">
   </head>
   <body>
       <header>
           <nav>
               <p>
-                <a href="{{ relURL "/" }}">8da.github.io</a>
+                <a href="{{ relURL "/" }}" id="siteName">t8da.com</a>
               </p>
           </nav>
       </header>
       <main>
-    {{ "<!-- _default/baseof.html start -->" | safeHTML }}
-    <hr />
     {{ block "main" . }}{{ end }}
-    {{ "<!-- _default/baseof.html end -->" | safeHTML }}
     </main>
   </body>
 
