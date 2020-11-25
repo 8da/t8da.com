@@ -1,7 +1,7 @@
-- - - -
+---
 title: "マウスピース"
 date: 2020-11-25T23:43:14+09:00
-- - - -
+---
 
 <blockquote class="imgur-embed-pub" lang="en" data-id="a_LgwmOUj"  ><a href="imgur.com/a/LgwmOUj">Mouthpiece and Shusshudent<_a><_blockquote><script async src="s.imgur.com/min/embed.js" charset="utf-8"><_script>
 
