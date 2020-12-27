@@ -3,7 +3,7 @@ title: "Google Cloud Shell べんり"
 date: 2020-12-27T08:14:39+09:00
 ---
 
-{{<imgur id=“6BAPxHG”>}}
+{{<imgur id="6BAPxHG">}}
 
 Cloud Shell便利。ブラウザあれば仕事できるやんけという感じ。
 
