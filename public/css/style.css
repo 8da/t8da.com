@@ -67,22 +67,3 @@ p {
     margin-block-start: 1.5rem;
     margin-block-end: 1.5rem;
 }
-
-.tweet {
-    display: flex;
-}
-
-.tweet .icon {
-    width:64px;
-}
-
-.tweet .tweet-body {
-    flex: 1;
-}
-
-.icon img {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    background-position: center ;
-}

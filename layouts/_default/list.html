@@ -4,18 +4,39 @@
 {{ define "main" }}
 
 <section>
-<ol class="articles">
-{{ range .Pages -}}
-<li>
-    <time>
-        {{ .Date.Format "2006-01-02" }}
-    </time>
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-</li>
-{{ end -}}
-</ol>
+    <div class="tweet">
+        <div class="icon">
+            <img src="images/icon.png" alt="icon_t8da">
+        </div>
+        <div class="tweet-body">
+            {{- range first 1 .Site.Data.tweets }}
+            <time>
+                {{ .created_at }}
+            </time>
+            <p>
+                {{ .body }}
+            </p>
+            {{- end }}
+        </div>
+    </div>
+
+    <div>
+        <a href={{ ref . "/tweets" }}>ツイートをもっと見る</a>
+    </div>
+</section>
+
+<section>
+    <ol class="articles">
+        {{ range .Pages -}}
+        <li>
+            <time>
+                {{ .Date.Format "2006-01-02" }}
+            </time>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </li>
+        {{ end -}}
+    </ol>
 
 </section>
 
 {{ end }}
-
