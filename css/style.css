@@ -67,3 +67,7 @@ p {
     margin-block-start: 1.5rem;
     margin-block-end: 1.5rem;
 }
+
+img {
+    margin-top: 3rem;
+}
